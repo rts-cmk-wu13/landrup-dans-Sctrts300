@@ -1,8 +1,3 @@
-fetch("http://localhost:4000/api/v1/testimonials", {
-  "method": "GET"
-})
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
 
 
 
