@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <main>
 
-      <section>
-        <a href="activities">Login her</a>
+      <section className="welcomelogin" id="welcomelogin"> 
+        <a className="loginbtn" href="activities">Login her</a>
       </section>
 
       <section>
