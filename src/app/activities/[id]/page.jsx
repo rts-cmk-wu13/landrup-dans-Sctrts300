@@ -1,4 +1,4 @@
-import "../activities.css"
+import "./actId.css"
 import Navbar from "../../components/Navbar"
 
 export default async function ActivitiesPage({ params }) {
@@ -19,8 +19,8 @@ export default async function ActivitiesPage({ params }) {
                     <p className="activity-age">{activity.minAge} år</p>
                     <p className="activity-description">{activity.description}</p>
                 </section>
-            <Navbar />
             </section>
+            <Navbar />
         </>
     )
 }
