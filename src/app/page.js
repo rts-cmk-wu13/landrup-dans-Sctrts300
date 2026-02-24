@@ -1,5 +1,6 @@
 import "./page.css"
 import teams from "./1.json"
+import Carusel from "./components/carusel.jsx"
 
 export default function Home() {
   console.log(teams)
@@ -42,10 +43,8 @@ export default function Home() {
         </section>
 
         <section>
-          <h3>Det siger vores kunder om os</h3>
-          <div>
-
-          </div>
+          <h1>Det siger vores kunder om os</h1>
+          <Carusel />
         </section>
 
         <section>

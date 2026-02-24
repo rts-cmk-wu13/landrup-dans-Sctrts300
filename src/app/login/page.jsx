@@ -1,0 +1,11 @@
+import Loginpage from "./login";
+import "./login.css"
+
+export default function Login() {
+    return (
+        <div>
+            <h1>Login</h1>
+            <Loginpage/>
+        </div>
+    )
+}
