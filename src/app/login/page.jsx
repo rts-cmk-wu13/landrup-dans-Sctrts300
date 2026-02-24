@@ -1,4 +1,4 @@
-import Loginpage from "./login";
+import Loginpage from "./loginForm";
 import "./login.css"
 
 export default function Login() {
