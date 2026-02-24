@@ -13,17 +13,17 @@
 .welcomelogin {
     background-image: url('/assets/images/Group 16.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;  
     flex-direction: column;
     align-items: center;    
-    width: 30rem;
+    max-width: 30rem;
     text-align: center;
 }
 
 .welcomelogincut {
     overflow: hidden;
-    height: 60rem;
+    max-height: 60rem;
     display: flex;
     justify-content: center;
 }
@@ -85,4 +85,50 @@ h3 {
     background-color: #E9E9E9;
     color: #003147;
     border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .welcomelogin, .welcomelogincut {
+        width: 100%;
+        height: auto;
+    }
+    .maincontent {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .teamimg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .welcomelogin {
+        width: 100%;
+        padding: 1rem;
+    }
+    .welcomelogincut {
+        height: auto;
+        padding: 0;
+    }
+    .maincontent {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .loginbtn {
+        padding: 0.7rem 2rem;
+        font-size: 1rem;
+        margin-top: 10rem;
+    }
+    h1, h2, h3 {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+    .emailnyhed {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .teamtypescards {
+        flex-direction: column;
+        align-items: center;
+    }
 }
