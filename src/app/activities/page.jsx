@@ -1,5 +1,6 @@
 import Link from "next/link"
 import "./activities.css"
+import Navbar from "../components/Navbar"
 
 
 export default async function ActivitiesPage() {
@@ -16,10 +17,10 @@ export default async function ActivitiesPage() {
             <h1>Aktiviteter</h1>
             <ul>
                 {activities.map((activity) => (
+                <div  key={activity.id}>
                     <Link href={`/activities/${activity.id}`} alt={activity.name}>
                     <li 
                         className="activitycard" 
-                        key={activity.id}
                         style={{ backgroundImage: `url(${activity.asset.url})` }}>
                             <section className="activitycard__content">
                                 <h2 style={{fontWeight: 600}}>{activity.name}</h2>
@@ -27,9 +28,11 @@ export default async function ActivitiesPage() {
                             </section>
                     </li>
                         </Link>
+            </div>
                 ))}
                     
             </ul>
+            <Navbar/>
         </>
     )
 }

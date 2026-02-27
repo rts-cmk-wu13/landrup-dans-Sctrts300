@@ -1,0 +1,94 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #002C3C;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    text-align: left;
+    width: 100%;
+    max-width: 320px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.loginInputBox {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.loginInput {
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 3px;
+    background: #E6E6E6;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    color: #222;
+    box-sizing: border-box;
+}
+
+.loginInputBox p,
+.loginForm > p {
+    color: #ffb3b3;
+    font-size: 0.95rem;
+    margin: 4px 0 0 4px;
+}
+
+
+.loginSubmitBtn {
+    width: 100%;
+    padding: 12px 0;
+    background: #F2F2F2;
+    color: #002C3C;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.loginSubmitBtn:disabled {
+    background: #cccccc;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.loginForm + p,
+div > p {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 12px;
+}
+
+a {
+    color: #bfeaff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #fff;
+}

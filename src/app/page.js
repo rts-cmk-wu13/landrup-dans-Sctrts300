@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <section className="welcomelogincut">
       <section className="welcomelogin" id="welcomelogin"> 
-        <a className="loginbtn" href="activities">Log ind her</a>
+        <a className="loginbtn" href="login">Log ind her</a>
         <a href="#voreshold">
         <img src="./assets/images/double_arrows.png" alt="Double arrows"></img>
         </a>
