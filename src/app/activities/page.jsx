@@ -11,7 +11,7 @@ export default async function ActivitiesPage() {
 
     return (
         <>
-
+        <div className="contain">
             {/* <SearchForm/> */}
         
             <h1>Aktiviteter</h1>
@@ -32,6 +32,7 @@ export default async function ActivitiesPage() {
                 ))}
                     
             </ul>
+        </div>
             <Navbar/>
         </>
     )

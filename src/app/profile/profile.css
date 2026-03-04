@@ -1,1 +1,53 @@
 
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.profile-page {
+  min-height: 100vh;
+  color: white;
+   
+   max-width: 75rem;
+}
+
+.profile-page h1 {
+  text-align: center;
+ 
+}
+
+.profile-container {
+  background-color: #e0e0e0;
+  color: #0f3f4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  
+}
+@media (min-width: 500px) {
+  .profile-container {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+.profile-info {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.profile-container p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profile-container p:last-of-type::first-letter {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}

@@ -20,12 +20,15 @@ const response = await fetch(`http://localhost:4000/api/v1/users/${userId}`, {
     const userData = await response.json()
     
     return (
-        <div>
-            <h1>Profile</h1>
-            <img  src="/assets/images/Vectorman.png" alt="Profile picture" />
-            <p>Velkommen</p>
-            <p>{userData.firstname} {userData.lastname}</p>
-            <p>{userData.role}</p>
+        <div className="profile-page">
+            <h1>Min profil</h1>
+            <div className="profile-container">
+                <img className="this-bish" src="/assets/images/Vectorman.png" alt="Profile picture" />
+                <section className="profile-info">
+                    <p>{userData.firstname} {userData.lastname}</p>
+                    <p>{userData.role}</p>
+                </section>
+            </div>
 
             <AdminPanel />
             

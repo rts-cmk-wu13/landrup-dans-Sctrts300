@@ -9,7 +9,7 @@
 }
 .tilmeld-btn {
     position: absolute;
-    left: 40%;
+    left: 50%;
     bottom: 1.5rem;
     background: #003147;
     color: #fff;
@@ -20,7 +20,7 @@
     z-index: 2;
 }
 .activity-age {
-    color: #b3e0ff;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 

@@ -1,0 +1,85 @@
+
+.rowcard {
+  background-color: #E9E9E9;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  color: #003147;
+}
+
+.uhaaaaa {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 1rem;
+
+}
+
+.plusman {
+  background-color: #ffffff;
+  color: #003147;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0.2rem 0.8rem;
+}
+
+.cardinfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.cardbuttons {
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+
+.editdelete {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.vishold {
+  padding: 0.5rem 3rem 0.5rem 3rem !important;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.team-card{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dates:first-of-type::first-letter {
+  text-transform: uppercase;
+  
+}
+
+.team-card p {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.minebitches {
+  margin: 2rem 0 1rem 0;
+  text-align: start;
+  font-size: 1.5rem;
+}
+
+.team-card button {
+  background-color: #003147;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+} 

@@ -1,5 +1,6 @@
 import { cookies } from "next/headers"
 import Link from "next/link"
+import "./card.css"
 
 export default async function AdminPanel() 
 {
@@ -33,27 +34,43 @@ console.log(activities)
 
 
     return userData.role === 'instructor' ? (
-        <div>
-            <h1>Mine hold</h1>
+        <div className="team-card">
+            <section className="uhaaaaa">
+                <h2 className="minebitches">Mine hold</h2> <a className="plusman"> + </a>
+            </section>
             <ul>
                 {activities.map(activity => (
-                    <div key={activity.id}>
-                        <h2>{activity.name}</h2>
-                        <Link href={`/activities/${activity.id}`}>Deltagerliste</Link>
+                    <div className="rowcard" key={activity.id}>
+                        <h3>{activity.name}</h3>
+                        <p className="dates">{activity.weekday} {activity.time}</p>
+                        <section className="cardinfo">
+                            <p>Max. deltagere: {activity.maxParticipants}</p>
+                            <p>Tilmeldte: 0</p>
+                        </section>
+                        <section className="cardbuttons">
+                            <button><Link href={`/activities/${activity.id}`}>Deltagerliste</Link></button>
+                            <section className="editdelete">
+                                <button><img src="/assets/images/rediger.png" alt="Rediger" /></button>
+                                <button><img src="/assets/images/delete.png" alt="Slet" /></button>
+                            </section>
+                        </section>
                     </div>
                 ))}
             </ul>
         </div>
 
     ) : (
-        <div>
-            <h1>Tilmeldte hold</h1>
+        <div className="team-card">
+            <section className="uhaaaaa">
+                <h1 className="minebitches">Tilmeldte hold</h1>
+            </section>
+
             <ul>
                 {userData.activities.map(activity => (
-                    <div key={activity.id}>
-                        <h2>{activity.name}</h2>
-                        <Link href={`/activities/${activity.id}`}>Vis hold</Link>
-                        
+                    <div className="rowcard" key={activity.id}>
+                        <h3>{activity.name}</h3>
+                        <p className="dates">{activity.weekday} {activity.time}</p>
+                        <button className="vishold"><Link href={`/activities/${activity.id}`}>Vis hold</Link></button>
                     </div>  
                 ))}
             </ul>
