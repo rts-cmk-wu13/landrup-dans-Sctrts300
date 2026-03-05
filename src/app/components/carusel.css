@@ -1,0 +1,19 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonialcard {
+  max-width: 500px;
+  padding: 40%;
+  background: #f4f4f4;
+}
+.testimonialcard__content{
+    text-align: center;
+}
+.text-white {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+

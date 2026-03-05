@@ -2,6 +2,7 @@ import "./page.css"
 import teams from "./1.json"
 import Carusel from "./components/carusel.jsx"
 import Email from "./components/email.jsx"
+import Kontakt from "./components/kontakt.jsx"
 
 export default function Home() {
   console.log(teams)
@@ -32,19 +33,28 @@ export default function Home() {
             </ul>
           </div>
 
-          <section>
+          <section className="emailisss">
             <Email />
           </section>
 
         </section>
+      </section>
 
-        <section>
-          <h1>Det siger vores kunder om os</h1>
+      <section className="carusel">
+        <section className="caruselbg">
+          
           <Carusel />
+        </section>
+      </section>
+
+      <section className="maincontent">
+        <section>
+          <Kontakt />
         </section>
 
         <section>
-          
+          <img src="/assets/images/Group_18.png" alt=""></img>
+          <p>Pulsen 8 . 4000 Roskilde Tlf. 3540 4550</p>
         </section>
       </section>
     </main>
