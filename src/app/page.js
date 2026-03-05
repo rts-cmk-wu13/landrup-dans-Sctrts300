@@ -1,6 +1,7 @@
 import "./page.css"
 import teams from "./1.json"
 import Carusel from "./components/carusel.jsx"
+import Email from "./components/email.jsx"
 
 export default function Home() {
   console.log(teams)
@@ -32,12 +33,7 @@ export default function Home() {
           </div>
 
           <section>
-            <h3>Nyhedsbrev</h3>
-            <p>Få direkte besked når vi har sæsonstart eller afholder arrangementer.</p>
-            <form>
-              <input className="emailnyhed" type="email" placeholder="Email" required />
-              <button className="emailnyhedbtn" type="submit">Tilmeld</button>
-            </form>
+            <Email />
           </section>
 
         </section>

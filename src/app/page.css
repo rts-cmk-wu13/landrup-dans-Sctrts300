@@ -72,21 +72,6 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
-.emailnyhed {
-    padding: 0.5rem;
-    width: 320px;
-    border: none;
-    background-color: #E9E9E9;
-    margin-right: 0.8rem;
-}
-.emailnyhedbtn {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #E9E9E9;
-    color: #003147;
-    border-radius: 8px;
-}
-
 @media (max-width: 900px) {
     .welcomelogin, .welcomelogincut {
         width: 100%;

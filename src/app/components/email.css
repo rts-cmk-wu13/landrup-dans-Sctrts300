@@ -1,0 +1,35 @@
+.emailnyhed {
+    padding: 0.5rem;
+    width: 320px;
+    border: none;
+    background-color: #E9E9E9;
+    margin-right: 0.8rem;
+}
+.emailnyhedbtn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #E9E9E9;
+    color: #003147;
+    border-radius: 8px;
+}
+
+@media (max-width: 450px) {
+    .emailnyhedbtn {
+    margin-top: 1rem;
+    
+}
+
+}
+
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}

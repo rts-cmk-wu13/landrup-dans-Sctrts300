@@ -9,7 +9,7 @@ export default async function Carusel() {
 
     return (
         <>
-            <h1>Det siger vores kunder om os</h1>
+            
             <ul>
                 {testimonials.map((testimonial) => (
                     <li 
