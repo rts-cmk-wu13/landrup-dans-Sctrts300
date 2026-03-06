@@ -3,25 +3,22 @@ import "./activities.css"
 import Navbar from "../components/Navbar"
 import SearchBar from "./SearchBar"
 
-
+//navn
+//dag
 export default async function ActivitiesPage({ searchParams }) {
     const response = await fetch("http://localhost:4000/api/v1/activities")
     const activities = await response.json()
 
        console.log(activities)
 
+
     const { query } = await searchParams
     console.log(query);
 
     const filteredActivities = query
-        ? activities.filter(activity =>
-            activity.name.toLowerCase().includes(query.toLowerCase()) ||
-            activity.weekday.toLowerCase().includes(query.toLowerCase())
-        )
-        : activities;
-
-    console.log(filteredActivities);
-
+        ? activities.filter(activity => activity.name.toLowerCase().includes(query.toLowerCase()) || activity.weekday.toLowerCase().includes(query.toLowerCase()))
+        : activities
+    console.log(filteredActivities)
 
     return (
         <>
@@ -30,7 +27,7 @@ export default async function ActivitiesPage({ searchParams }) {
         
             <h1>Aktiviteter</h1>
             <ul>
-                {activities.map((activity) => (
+                {filteredActivities.map((activity) => (
                 <div  key={activity.id}>
                     <Link href={`/activities/${activity.id}`} alt={activity.name}>
                     <li 
