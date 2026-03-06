@@ -1,18 +1,32 @@
 import Link from "next/link"
 import "./activities.css"
 import Navbar from "../components/Navbar"
+import SearchBar from "./SearchBar"
 
 
-export default async function ActivitiesPage() {
+export default async function ActivitiesPage({ searchParams }) {
     const response = await fetch("http://localhost:4000/api/v1/activities")
     const activities = await response.json()
 
-    console.log(activities)
+       console.log(activities)
+
+    const { query } = await searchParams
+    console.log(query);
+
+    const filteredActivities = query
+        ? activities.filter(activity =>
+            activity.name.toLowerCase().includes(query.toLowerCase()) ||
+            activity.weekday.toLowerCase().includes(query.toLowerCase())
+        )
+        : activities;
+
+    console.log(filteredActivities);
+
 
     return (
         <>
         <div className="contain">
-            {/* <SearchForm/> */}
+            <SearchBar />
         
             <h1>Aktiviteter</h1>
             <ul>

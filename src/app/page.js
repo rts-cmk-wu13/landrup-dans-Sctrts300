@@ -52,10 +52,10 @@ export default function Home() {
           <Kontakt />
         </section>
 
-        <section>
-          <img src="/assets/images/Group_18.png" alt=""></img>
-          <p>Pulsen 8 . 4000 Roskilde Tlf. 3540 4550</p>
-        </section>
+        <section className="center_section">
+          <img src="/assets/images/Group_18.png" alt="" />
+          <p className="textalign_center">Pulsen 8 . 4000 Roskilde Tlf. 3540 4550</p>
+</section>
       </section>
     </main>
   );

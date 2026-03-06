@@ -69,7 +69,7 @@ console.log(activities)
                 {userData.activities.map(activity => (
                     <div className="rowcard" key={activity.id}>
                         <h3>{activity.name}</h3>
-                        <p className="dates">{activity.weekday} {activity.time}</p>
+                        <p>{activity.weekday} {activity.time}</p>
                         <button className="vishold"><Link href={`/activities/${activity.id}`}>Vis hold</Link></button>
                     </div>  
                 ))}

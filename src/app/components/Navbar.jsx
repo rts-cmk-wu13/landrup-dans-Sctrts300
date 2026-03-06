@@ -1,4 +1,7 @@
 import "./navbar.css";
+import { FiHome } from "react-icons/fi";
+import { FaListUl } from "react-icons/fa6";
+import { IoMdPerson } from "react-icons/io";
 
 export default function Navbar() {
     return (
@@ -6,11 +9,11 @@ export default function Navbar() {
             <nav aria-label="Main_navigation">
                 <ul className="navbar-list">
 
-                    <li><a className="navimg" href="/"><img src="/assets/images/home.png" alt="Hjem" /></a></li>
+                    <a className="navimg" href="/"><FiHome className="w-8 h-8"/>Home</a>
 
-                    <li><a className="navimg" href="/activities"><img src="/assets/images/activity.png" alt="Aktiviteter" /></a></li>
+                    <a className="navimg" href="/activities"><FaListUl className="w-8 h-8"/>Aktiviteter</a>
 
-                    <li><a className="navimg" href="/profile"><img src="/assets/images/profile.png" alt="Profil" /></a></li>
+                    <a className="navimg" href="/profile"><IoMdPerson className="w-8 h-8"/>Profil</a>
 
                 </ul>
             </nav>

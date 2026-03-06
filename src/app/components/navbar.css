@@ -9,28 +9,36 @@
 .navbar-list {
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: space-around; 
+    padding: 1rem 0; 
     background-color: #E9E9E9;
     text-decoration: none;
-    
+    margin: 0;
 }
 
 .navimg {
-    opacity: 50%;
-}
-.navimg :active{
-    opacity: 100%;
-}
-.navimg :hover{
-    opacity: 100%;
+    display: flex;           
+    flex-direction: column;  
+    align-items: center;    
+    opacity: 0.5;
+    text-decoration: none;
+    color: black;            
 }
 
-@media (max-width: 400px) {
-    .navbar-list {
-        flex-direction: row;
-        padding: 0.5rem;
-        justify-content: space-between;
-    }
+.navimg:hover {
+    opacity: 1;
+    cursor: pointer;
 }
+
+.navimg:active {
+    opacity: 1;
+}
+
+
+.navimg svg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px; 
+}
+
 
