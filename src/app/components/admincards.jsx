@@ -36,19 +36,19 @@ console.log(activities)
     return userData.role === 'instructor' ? (
         <div className="team-card">
             <section className="uhaaaaa">
-                <h2 className="minebitches">Mine hold</h2> <a className="plusman"> + </a>
+                <h2 className="minebitches">Mine hold</h2> <a className="plusman" > + </a>
             </section>
             <ul>
                 {activities.map(activity => (
                     <div className="rowcard" key={activity.id}>
                         <h3>{activity.name}</h3>
-                        <p className="dates">{activity.weekday} {activity.time}</p>
+                        <p>{activity.weekday} {activity.time}</p>
                         <section className="cardinfo">
                             <p>Max. deltagere: {activity.maxParticipants}</p>
-                            <p>Tilmeldte: 0</p>
+                            <p>Tilmeldte: {activity.users.lenght}</p>
                         </section>
                         <section className="cardbuttons">
-                            <button><Link href={`/activities/${activity.id}`}>Deltagerliste</Link></button>
+                            <button><Link href={`/profil/hold/${activity.id}`}>Deltagerliste</Link></button>
                             <section className="editdelete">
                                 <button><img src="/assets/images/rediger.png" alt="Rediger" /></button>
                                 <button><img src="/assets/images/delete.png" alt="Slet" /></button>

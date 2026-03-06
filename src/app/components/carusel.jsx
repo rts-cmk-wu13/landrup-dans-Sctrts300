@@ -39,8 +39,8 @@ export default function Carusel() {
                 </section>
             </div>
             <div className="flex justify-center">
-            <button className="text-white" onClick={prevSlide}><IoChevronBackCircleOutline className="w-15 h-15"/></button>
-            <button className="text-white" onClick={nextSlide}><IoChevronForwardCircleOutline className="w-15 h-15"/></button>
+            <div className="slidebtn" onClick={prevSlide}><IoChevronBackCircleOutline className="w-15 h-15 text-white"/></div>
+            <div className="slidebtn" onClick={nextSlide}><IoChevronForwardCircleOutline className="w-15 h-15 text-white"/></div>
             </div>
 
         </div>

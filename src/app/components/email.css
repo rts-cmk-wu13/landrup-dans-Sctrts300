@@ -1,35 +1,24 @@
+.emailform {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap:10px;
+  width: 100%;
+}
+
 .emailnyhed {
-    padding: 0.5rem;
-    width: 320px;
-    border: none;
-    background-color: #E9E9E9;
-    margin-right: 0.8rem;
+  flex: 1;              
+  border: none;
+  background-color: #E9E9E9;
+  padding:10px;
 }
+
 .emailnyhedbtn {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #E9E9E9;
-    color: #003147;
-    border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #E9E9E9;
+  color: #003147;
+  border-radius: 8px;
+  font-size: 1.2rem;
 }
 
-@media (max-width: 450px) {
-    .emailnyhedbtn {
-    margin-top: 1rem;
-    
-}
-
-}
-
-
-.success {
-  color: green;
-  font-size: 14px;
-  margin-top: 8px;
-}
-
-.error {
-  color: red;
-  font-size: 14px;
-  margin-top: 8px;
-}

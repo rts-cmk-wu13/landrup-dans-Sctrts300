@@ -11,7 +11,7 @@ export default function Email() {
         <section>
             <h3>Nyhedsbrev</h3>
             <p>Få direkte besked når vi har sæsonstart eller afholder arrangementer.</p>
-            <form>
+            <form className="emailform">
               <input className="emailnyhed" type="email" placeholder="Email" required />
               <button className="emailnyhedbtn" type="submit">Tilmeld</button>
             </form>

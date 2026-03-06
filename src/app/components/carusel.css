@@ -7,7 +7,6 @@
 .testimonialcard {
   max-width: 500px;
   padding: 40%;
-  background: #f4f4f4;
 }
 .testimonialcard__content{
     text-align: center;
@@ -17,3 +16,7 @@
   cursor: pointer;
 }
 
+.slidebtn {
+  padding: 10px 15px;
+  cursor: pointer;
+}
