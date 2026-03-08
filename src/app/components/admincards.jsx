@@ -1,6 +1,7 @@
 import { cookies } from "next/headers"
 import Link from "next/link"
 import "./card.css"
+import OpretHold from "../oprethold/page"
 
 export default async function AdminPanel() 
 {
@@ -36,7 +37,8 @@ console.log(activities)
     return userData.role === 'instructor' ? (
         <div className="team-card">
             <section className="uhaaaaa">
-                <h2 className="minebitches">Mine hold</h2> <a className="plusman" > + </a>
+                <h2 className="minebitches">Mine hold</h2> 
+                <button className="plusman"><Link href={`/oprethold`}> + </Link></button>
             </section>
             <ul>
                 {activities.map(activity => (
@@ -48,10 +50,10 @@ console.log(activities)
                             <p>Tilmeldte: {activity.users.lenght}</p>
                         </section>
                         <section className="cardbuttons">
-                            <button><Link href={`/profil/hold/${activity.id}`}>Deltagerliste</Link></button>
+                            <button><Link href={`/profile/hold/${activity.id}`}>Deltagerliste</Link></button>
                             <section className="editdelete">
-                                <button><img src="/assets/images/rediger.png" alt="Rediger" /></button>
-                                <button><img src="/assets/images/delete.png" alt="Slet" /></button>
+                                <button><Link href={`/oprethold`}><img src="/assets/images/rediger.png" alt="Rediger" /></Link></button>
+                                <button> <img src="/assets/images/delete.png" alt="Slet" /></button>
                             </section>
                         </section>
                     </div>

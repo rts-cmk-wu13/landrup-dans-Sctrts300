@@ -47,6 +47,7 @@ export async function loginUser(prevState, formData) {
 const data = await response.json()
 cookieStore.set("accessToken", data.token)
 cookieStore.set("userId", data.userId)
+cookieStore.set("role", data.role)
  
 return redirect("/profile")
 }

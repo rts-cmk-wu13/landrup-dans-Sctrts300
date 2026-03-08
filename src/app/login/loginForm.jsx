@@ -18,10 +18,7 @@ export default function LoginForm() {
  
  
     return (
-        <>
-       
- 
-       
+        <>     
             <form className="loginForm" action={formAction} noValidate>
  
                 {/* username */}
